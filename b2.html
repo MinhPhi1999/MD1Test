@@ -12,23 +12,38 @@
     let arr = [1,2,3,4,5]
     let x = +prompt('nhập số')
     function checkFunc(arr,b) {
-        let checkFunction = true;
+        let check = true;
         for (let i = 0;i<arr.length;i++){
             if (b===arr[i]){
+                check= true;
                 document.write(i)
-                checkFunction= true;
                 break
             }
             else {
-                checkFunction= false
+                check= false
             }
         }
-        if (checkFunction === false){
+        if (check === false){
             document.write('k thuộc mảng')
         }
     }
 
     checkFunc(arr,x)
 
+
+
+    //cleancode bài c Thương
+
+
+    // function findIndex(arr, x) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] === x) {
+    //             return alert('Index of integer ' + x + ' is ' + i);
+    //         }
+    //     }
+    //     return alert(x + ' does not belongs in the array.');
+    // }
+    //
+    // findIndex([1, 6, 4, 0, 63, -5, 10], 1)
 
 </script>
